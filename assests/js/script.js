@@ -18,12 +18,12 @@ function validateLoginForm(){
     var phformat = /^\d{10}$/; 
     if(email)
     {
-        emailFlag = 1;
     if(mailformat.test(email)==true){
       document.getElementById("email").style="border:3px solid green;";
     document.getElementById("mailerror").style="display:none;"
     document.getElementById("mailvalid").style="display:none;"
     document.getElementById("lgo").style="display: inline-block;"
+         emailFlag = 1;
     }
     else {
     document.getElementById("email").style="border:3px solid red"
@@ -42,11 +42,11 @@ function validateLoginForm(){
  if(ph){
  if(phformat.test(ph)==true)
  {
-    phFlag = 1;
   document.getElementById("ph").style="border:3px solid green;"
   document.getElementById("pherror").style="display:none;"
   document.getElementById("phvalid").style="display:none;"
   document.getElementById("lgo2").style="display: inline-block;"
+      phFlag = 1;
  }
 else{
 document.getElementById("ph").style="border:3px solid red;"
@@ -65,12 +65,12 @@ if(user)
 {
 if(user.length>=3)
 {
-    nameFlag =1;
     localStorage.setItem('Uname',user)
   document.getElementById("uname").style="border:3px solid green;"
   document.getElementById("uerror").style="display:none;"
   document.getElementById("uvalid").style="display:none;"
   document.getElementById("lgo3").style="display: inline-block;"
+     nameFlag =1;
 }
 else{
   document.getElementById("uname").style="border:3px solid red;"

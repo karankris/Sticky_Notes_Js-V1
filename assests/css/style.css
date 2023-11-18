@@ -1,0 +1,96 @@
+.body
+{
+    margin: 0;
+    padding: 0;
+   background: black;
+}
+.toptx{
+    font-size: xxx-large;
+    font-weight: 600;   
+    color: #164863 !important;
+    font-family: 'Roboto', sans-serif;
+}
+.toptx2{
+    font-size: x-large;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    color: #164863 !important;
+}
+.toptx1{
+    font-size: x-large;
+    font-weight: 600;   
+    color: #DDF2FD !important;
+    font-family: 'Roboto', sans-serif;
+
+}
+.bg{
+    background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.txt-box{
+    padding-top: 3rem;
+    width: 20rem;
+    margin-left: 15rem;
+}
+.lgo1
+{
+    margin-left: 63rem;
+    margin-top: -61px;
+    font-size: xxx-large;
+    color: lightgreen;
+    background: green;
+    border-radius: 4rem;
+}
+ .links{
+    font-size: large;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    color: #164863 !important;
+ }
+ .links:hover{
+  text-decoration:  none;
+ }
+.logo2{
+    font-size: large;
+    color: #1F1717;
+}
+ 
+/* .cnt{
+ 
+    width: 4rem;
+    height: 35rem
+} */
+@media(max-width:768px){
+
+    .txt-box{
+        padding-top: 3rem;
+        width: 20rem;
+        margin-left: -5rem;
+}
+    p{
+        font-size: large !important;
+        font-weight: bolder;
+        border-radius: 0px !important;
+        width: 18rem !important;
+        margin-left: -5rem;
+        border-radius: 1rem !important;
+  
+    }
+    .b1{
+        height: 2rem;
+        width: 5rem;
+        padding: 0px;
+        font-size: small;
+    }
+    .lgo1
+{
+    margin-left: 18rem  ;
+    margin-top: -52px;
+    font-size: xx-large;
+    color: lightgreen;
+    background: green;
+    border-radius: 4rem;
+}   
+}

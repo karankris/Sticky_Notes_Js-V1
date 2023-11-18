@@ -1,0 +1,78 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/8085d71614.js" crossorigin="anonymous"></script>
+        <title>TO-DO List</title>
+    </head> 
+    <body class="bg">
+      <section id="To-Do">  
+        <i class="fa-solid fa-backward logo2 ml-2 mt-3"><a href="../index.html" class="links ml-2 ">Back to Home</a></i>
+        <div class="text-center">
+        <label class="toptx2 mt-5 pl-3" ><strong>WELCOME</strong></label>
+        <span class="toptx1 mt-3 " id="usename" > </span><br>
+      </div>
+        <h1 class="text-center toptx  mt-5"><span style="color: #DDF2FD;">THINGS TO BE </span> DONE</h1><i class="fa-regular fa-circle-check lgo1"></i>
+        <div class="container mt-5 text-center w-50 cnt">
+          <div class="input-group mb-3 content txt-box">
+            <input type="text" class="form-control txb" id="txt" placeholder="Enter the content"/>
+            <div class="input-group-append">
+              <button class="btn btn-info" type="button" id="button-addon2" onclick="add()">Add</button>
+            </div>  
+          </div>
+          <div class="container">
+        <div id="contain">
+        <!-- <h4 id="content cnt2"><button id="btn1" class="delete btn btn-danger" onclick="remove(event)">Delete</button></h4> -->
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <script src="./js/todo.js"></script>
+    </body>
+    <script>
+          var text_cont = document.getElementById("txt");
+          var content = document.getElementById("content");
+          function add(){
+  if(text_cont.value.length>0  ){
+     if(text_cont.value.length<=35){
+      var store=document.createElement('p');
+      store.innerHTML=text_cont.value+ "<br><button onclick=\"remove(event)\" class='b1 delete btn btn-danger mt-2'>Delete item</button>"
+      store.style.color="black";
+      store.style.marginTop="2rem";
+      store.style.fontSize="xx-large";
+      store.style.background="white";
+      store.style.borderRadius="2rem";
+      store.style.padding="10px";
+      store.style.fontFamily="'Lato', sans-serif";
+      contain.append(store)
+  }
+  else{
+     alert("Size limit of the text is exceeded!! Notes content should be within 35 words")
+  }
+}
+  else{
+    alert("Text field is empty")
+  }
+}
+          function  remove(event){
+            event.target.parentElement.remove()
+          }
+    </script>
+   
+</html>

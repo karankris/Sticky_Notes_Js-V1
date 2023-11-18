@@ -1,0 +1,59 @@
+#fo
+{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d7d2cc, #304352); 
+  height: 60rem;
+}
+.header
+{
+  font-family: 'Roboto', sans-serif;
+  color: #164863 !important;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold !important;
+
+}
+
+.co 
+{
+  margin-top: 88px;
+  width: 23rem !important;
+}
+
+.fb
+{
+  background-color: #E6E6FA;
+  padding: 60px;
+  border-radius: 29px;
+} 
+.btnn
+{
+  font-size: x-large;
+}
+.btn{
+  font-family: 'Roboto', sans-serif;
+  font-size: xx-large;
+  border-radius: 20px;
+    width: 151px;
+}
+.form-control
+{
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.hd{
+font-size: x-large;
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+}
+.lg-style{
+  font-size: larger;
+  color: green;
+  font-weight: 600 !important;
+}
